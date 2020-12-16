@@ -7,4 +7,9 @@ const sendErrorMessage = require("../helpers/sendError");
 const sendResponse = require("../helpers/sendResponse");
 
 const fileName = path.join(__dirname, "..", "data", "data.json");
-const blog = JSON.parse(fs.readFileSync(fileName, "utf-8"));
+const blogs = JSON.parse(fs.readFileSync(fileName, "utf-8"));
+//get all blogs
+const getAllBlogs = (req, res, next) => {
+  sendResponse(200, "Successful", tasks, req, res);
+};
+module.exports = { getAllBlogs };
