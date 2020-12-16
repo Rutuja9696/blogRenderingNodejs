@@ -1,6 +1,8 @@
 const express = require("express");
 const dotenv = require("dotenv");
 dotenv.config({ path: "./config.env" });
+const { config } = require("process");
+
 const app = express();
 
 app.listen(
