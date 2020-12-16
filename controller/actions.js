@@ -10,12 +10,18 @@ const fileName = path.join(__dirname, "..", "data", "data.json");
 const blogs = JSON.parse(fs.readFileSync(fileName, "utf-8"));
 //get all blogs
 const getAllBlogs = (req, res, next) => {
-  sendResponse(200, "Successful", blogs, req, res);
+  //querry prameter
+  let data = blogs.filter((blog) => {
+    return Object.keys(req.query).every((param) => {
+      return blog[param] == req.query[param];
+    });
+  });
+  sendResponse(200, "Successful", data, req, res);
 };
 //get by id
 const getById = (req, res) => {
   const blogDisplay = blogs.find((blog) => {
-    return blog.blogId == req.params.blogId;
+    return blog.id == req.params.id;
   });
   if (blogDisplay) {
     sendResponse(200, "Successful", [blogDisplay], req, res);
