@@ -29,4 +29,7 @@ steps to view output:\
 6.add request (get) for get-blog-by-query-parameter (url:http://localhost:3000/blogs/?id=2rvqpdbpka3n3fhd)
 
 #DEMO:\
-refer the heroko link to view the demo (link:)
+refer the heroko link to view the demo :\
+1.to view all blogs(link:https://blog-rendering1.herokuapp.com/blogs)\
+2.to view blog by id(link:https://blog-rendering1.herokuapp.com/blogs/2rvqpdbpka3n3fhd)\
+3.to view by query parameter (link:https://blog-rendering1.herokuapp.com/blogs/?id=2rvqpdbpka3n3fhd)
