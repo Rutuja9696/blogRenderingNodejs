@@ -1,7 +1,6 @@
 //all route handlers
 const fs = require("fs");
 const path = require("path");
-// const Blogs = require("../models/blog.js");
 const AppError = require("../helpers/appErrorClass");
 const sendErrorMessage = require("../helpers/sendError");
 const sendResponse = require("../helpers/sendResponse");

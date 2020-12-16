@@ -24,8 +24,8 @@ steps to view output:\
 1.Install postman.\
 2.Login with required credentials.\
 3.create new collection (name:blogRendering).\
-4.Add request (get) for get-all-blogs (url:http://localhost:3000/blogs)\
-5.Add request (get) for get-blog-by-id (url:http://localhost:3000/blogs/2rvqpdbpka3n3fhd)\
+4.Add request (get) for get-all-blogs (url:http://localhost:3000/blogs) \
+5.Add request (get) for get-blog-by-id (url:http://localhost:3000/blogs/2rvqpdbpka3n3fhd) \
 6.add request (get) for get-blog-by-query-parameter (url:http://localhost:3000/blogs/?id=2rvqpdbpka3n3fhd)
 
 #DEMO:\
