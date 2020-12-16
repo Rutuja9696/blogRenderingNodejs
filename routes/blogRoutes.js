@@ -1,4 +1,4 @@
 const express = require("express");
-const {} = require("../controller/actions.js");
+const { getAllBlogs, getById } = require("../controller/actions.js");
 const router = express.Router();
-router.route("/blogs");
+router.route("/blogs").get(getAllBlogs, getById);
