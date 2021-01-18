@@ -25,7 +25,11 @@ const getById = (req, res) => {
   if (blogDisplay) {
     sendResponse(200, "Successful", [blogDisplay], req, res);
   } else {
-    sendError(new AppError(404, "Not Found", "blog not available"), req, res);
+    sendErrorMessage(
+      new AppError(404, "Not Found", "blog not available"),
+      req,
+      res
+    );
   }
 };
 module.exports = { getAllBlogs, getById };
